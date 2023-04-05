@@ -1,0 +1,237 @@
+/* define theme color */
+:root{
+    --blue:#042a3c;
+    --lightblue:#184262;
+    --buttonblack:#272727;
+}
+/* overall page styling */
+html {
+    font-family: sans-serif;
+    text-align: center;
+}
+/*remove white margin */
+body {
+    margin:0 auto;
+    padding:0;
+} 
+/* header section */
+#header-h1 {
+    font-size: 10rem;
+    margin: 0 auto;
+    color:white;
+}
+#header-h3 {
+    font-size: 1.8rem;
+    color:white;
+}
+
+header {
+   position:relative;
+}
+
+/* =============== image slider =============== */
+.slider {
+    width: 300%;
+    height:600px;
+    display:flex; /*display the image horizontally */
+}
+
+/*make the image take up the full view*/
+.slider img {
+    scroll-snap-align: start;
+    width: 33.3333%;
+    object-fit: cover;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: black;
+  }
+
+/* header text */
+.header-text-overlay {
+    position:absolute;
+    top:30%; /*put the text at the center */
+    left:40%; /*put the text at the center */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-h1 {
+    color:var(--blue);
+}
+
+#main-h3 {
+    color:var(--blue);
+}
+
+/* navigation bar */
+#mainNavWrapper {
+    position:absolute;
+    left:20%;
+    top:80%;
+} /*make the nav bar lay on top of image */
+
+#mainNavWrapper a{
+    text-decoration: none;
+    color:white;
+    margin: 20px;
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size:17px;
+    letter-spacing: 2px;
+}
+
+/* reserve link section */
+.reserve-section-container {
+    display:flex;
+    margin: 0 auto;
+}
+
+.sqre-button-container {
+    border:2px solid black;
+    border-radius:6px;
+    cursor: pointer;
+    padding:20px;
+    margin-left:100px;
+    margin-right:100px;
+}
+.sqre-button-container:hover{
+    background-color: black;
+}
+.sqre-button-container:hover a{
+    color:white;
+}
+
+.sqre-button-container a {
+    text-decoration: none;
+    color:black;
+}
+
+/* current hour section */
+#hour-section {
+    margin-top:30px;
+}
+
+/* contact section */
+#contact-info-container {
+    display:flex;
+    margin:30px;
+}
+
+#address-container{
+    flex:1; 
+} /*occupy equal space and appear side by side*/
+
+#phone-container{
+    flex:1;
+}
+
+#contact-info-container h3 {
+    color:grey;
+    
+}
+
+#contact-info-container a {
+    color:var(--lightblue);
+    text-decoration: none;
+}
+
+/* reservation section */
+#reservation-section {
+    padding:68px 34px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+#reservation-section div {
+    margin: 2rem;
+}
+#reservation-section div:hover{
+    opacity: 80%;
+}
+
+#reservation-section a {
+    text-decoration: none;
+    background-color: var(--buttonblack);
+    color:white;
+    padding:1em 2.5em;
+    font-size: 20px;
+}
+
+/* prefooter section */
+#pre-footer{
+    background-color: var(--blue);
+}
+
+.newsletter-title {
+    color:white;
+    font-size:2rem;
+}
+
+.email-input {
+    padding:1rem;
+    width:15rem;
+}
+
+.sign-up-button {
+    font-size:15px;
+    background-color: var(--blue);
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+.socialmedia-container {
+    margin-top: 30px;
+    padding-bottom: 17px;
+}
+
+.social-icon {
+    color:white;
+    font-size:24px;
+    border: 2px solid var(--lightblue);
+    border-radius: 50%;
+    margin-right:10px;
+}
+/* change the size to circle */
+#ins-icon {
+    padding: 0.25em 0.25em;
+}
+#facebook-icon{
+    padding:0.25em 0.5em;
+}
+
+.social-icon:hover {
+    background-color:white;
+    color:var(--blue);
+}
+
+/*footer text formatting*/
+footer {
+    background-color: var(--blue);
+    padding:68px 34px;
+    font-family: "Raleway";
+}
+footer .site-address, .site-phone{
+    color:white;
+}
+
+.footer-copyright {
+    color: rgba(255,255,255,.3);
+}

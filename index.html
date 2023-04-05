@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- import the icon library-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="..." crossorigin="anonymous" />
+    <title>Restaurant Clone</title>
+</head>
+<body>
+    <header>
+    <div class="slide-container">
+        <div class="slider">
+            <!--create separate div for each image -->
+                <img src="./images/background_1.jpeg"/>
+                <img src="./images/background_2.jpeg"/>
+                <img src="./images/background_3.jpeg"/>
+        </div>
+        <div class="dot-container">
+            <!--create the dots for each image -->
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div> 
+    </div>
+    <!-- Text Heading starts-->
+    <div class="header-text-overlay">
+        <h1 id="header-h1">ie</h1>
+        <h3 id="header-h3">ITALIAN EATERY</h3>
+    </div>
+    <div id="mainNavWrapper">
+        <nav id="navigation">
+            <a href="#hour-section">HOURS</a>
+            <a href="#reservation-section">RESERVATIONS</a>
+            <a href="https://www.italianeatery.com/menus" target="_blank">MENU</a>
+            <a href="https://www.italianeatery.com/classes" target="_blank">EVENTS</a>
+            <a href="https://www.italianeatery.com/join" target="_blank">JOIN</a>
+        </nav>
+    </div>
+    </header>   
+    <main>
+        <h1 class="main-h1">HERE FOR THE NEIGHBORHOOD</h1>
+        <p>ie is a neighborhood eatery at heart, conveniently located on the Minnehaha Parkway nestled amidst the lakes of South Minneapolis. We are stirred by the Italian dining traditions that inspire authentic hospitality to nurture depth in our community. </p>
+        <h3 id="main-h3">WELCOME BACK!</h3>
+        <p style="font-style: italic;">we are humbled to serve you at our table or yours!</p>
+        <!-- Reserve Section-->
+        <div class="reserve-section-container">
+            <div class="sqre-button-container">
+                <a href="https://www.italianeatery.com/reservations" target="_blank">RESERVE A TABLE</a>
+            </div>
+            <div class="sqre-button-container">
+                <a href="https://www.toasttab.com/italianeatery/v3" target="_blank">ORDER ONLINE</a>
+            </div>
+        </div>
+        <!-- Hour Section -->
+        <div id="hour-section">
+            <h1 class="main-h1">CURRENT HOURS</h1>
+            <h2>MONDAY - SUNDAY</h2>
+            <h1 class="main-h1">4pm - 10pm</h1>
+        </div>
+        <div id="contact-info-container">
+            <div id="address-container">
+                <h3>ADDRESS</h3>
+                <a href="https://goo.gl/maps/qhDhyGNGgqH2" target="_blank">4724 Cedar Ave Minneapolis, MN 55407</a>
+            </div>
+            <div id="phone-container">
+                <h3>PHONE</h3>
+                <a href="tel:%28612%29%20223-8504" target="_blank">(612) 223-8504</a>
+            </div>
+        </div>
+        <div id="reservation-section">
+            <div>
+                <a href="https://www.toasttab.com/italianeatery" target="_blank">TAKE AWAY ORDERS</a>
+            </div>
+            <div>
+                <a href="https://www.order.store/store/ie-italian-eatery/u0xZbvSQVRuoc3-O7Kwptw" target="_blank">DELIVERY ORDERS</a>
+            </div>
+            <div>
+                <a href="https://www.italianeatery.com/reservations" target="_blank">RESERVATIONS</a>
+            </div>
+        </div>
+        <img src="./images/divider_photo.jpeg"/>
+        <!--pre-footer-section-->
+        <div id="pre-footer">
+            <h2 class="newsletter-title">ie | news.</h2>
+            <div class="newsletter-container">
+                <input type="email" placeholder="Email Address" class="email-input"/>
+                <button type="submit" class="sign-up-button">SIGN UP</button>
+            </div>
+            <div class="socialmedia-container">
+                <a href="http://instagram.com/italianeatery" target="_blank" class="social-icon" id="ins-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.facebook.com/italianeaterymn" target="_blank" class="social-icon" id="facebook-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--footer -->
+    <footer>
+        <div id="site-info">
+            <span class="site-address">ITALIAN EATERY, 4724 CEDAR AVENUE, MINNEAPOLIS, MN, 55407</span>
+            <span class="site-phone">(612) 223-8504</span>
+        </div>
+        <p class="footer-copyright">Copyright 2018 Italian Eatery, LLC</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
