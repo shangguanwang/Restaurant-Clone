@@ -58,6 +58,7 @@ header {
     max-width: 1425px;
     height:600px;
     display:flex; /*display the image horizontally */
+    overflow: hidden; /*crop the image if the height is over 600px*/
 }
 
 .carousel-item,.carousel-item-hidden {
@@ -65,6 +66,7 @@ header {
 }
 .carousel-item-visible {
     display:block;
+    animation: fadeVisibility 0.5s; /* smooth transition */
 }
 
 /*make the image take up the full view*/
@@ -74,6 +76,13 @@ header {
     object-fit: cover;
   }
 /* set the styling for dots */
+.dot-container{
+    position:absolute;
+    top:92%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
   .dot {
     display: inline-block;
     width: 10px;
@@ -104,7 +113,6 @@ main {
     display:flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 200px;
 }
 
 .main-h1 {
@@ -270,4 +278,14 @@ footer .site-address, .site-phone{
 
 .footer-copyright {
     color: rgba(255,255,255,.3);
+}
+
+/* Smooth Transition for the slides */
+@keyframes fadeVisibility {
+    0%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 1;
+    }
 }

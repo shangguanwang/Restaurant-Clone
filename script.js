@@ -11,6 +11,9 @@ const dots = document.getElementsByClassName("dot");
 leftArrow.addEventListener('click', moveBack)
 rightArrow.addEventListener('click',moveToNext)
 
+// Automatic Transition
+setInterval(moveToNext,4000);
+
 // Define the functions for the above event listeners
 function hideAllSlides(){
     for (let img of imgs){
