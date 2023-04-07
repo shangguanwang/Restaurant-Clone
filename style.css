@@ -28,29 +28,62 @@ body {
 header {
    position:relative;
 }
+/* =============== arrow slider =============== */
+
+/* move the two arrows up to the image center */
+.arrow {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%); /*want move arrow up a bit so the arrow is exactly in the middle */
+    width:45px;
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.arrow:hover{
+    opacity: 100%;
+}
+
+.arrow span {
+    font-size: 35px; /*increase the arrrow size */
+    color:white;
+}
+
+.right {
+    right:0;
+}
 
 /* =============== image slider =============== */
 .slider {
-    width: 300%;
+    max-width: 1425px;
     height:600px;
     display:flex; /*display the image horizontally */
 }
 
+.carousel-item,.carousel-item-hidden {
+    display: none;
+}
+.carousel-item-visible {
+    display:block;
+}
+
 /*make the image take up the full view*/
 .slider img {
-    scroll-snap-align: start;
-    width: 33.3333%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
-
+/* set the styling for dots */
   .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
     margin: 0 10px;
     border-radius: 50%;
-    background-color: gray;
-    cursor: pointer;
+  }
+
+  .dot-hidden{
+    background-color: white;
   }
 
   .active {
@@ -61,7 +94,8 @@ header {
 .header-text-overlay {
     position:absolute;
     top:30%; /*put the text at the center */
-    left:40%; /*put the text at the center */
+    left:50%; /*put the text at the center */
+    transform: translateX(-50%); /*put the text right at the center */
     display: flex;
     flex-direction: column;
 }
@@ -70,6 +104,7 @@ main {
     display:flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 200px;
 }
 
 .main-h1 {
@@ -83,7 +118,8 @@ main {
 /* navigation bar */
 #mainNavWrapper {
     position:absolute;
-    left:20%;
+    left:50%;
+    transform: translateX(-50%);
     top:80%;
 } /*make the nav bar lay on top of image */
 
